@@ -354,3 +354,68 @@ table {
 td,
 th {
   padding: 0; }
+
+body {
+  padding: 2em;
+  background: #47a3da;
+  color: #fff; }
+
+form input {
+  color: #10689a;
+  border: solid #fff 0.2em;
+  background: #47a3da;
+  font-style: italic;
+  padding: .5em;
+  width: 100%;
+  margin: 0.5em 0 2em 0; }
+
+form select {
+  background: #47a3da;
+  width: 100%;
+  padding: 1em;
+  margin: 0.5em 0 2em 0;
+  padding: 1em; }
+
+form textarea {
+  width: 100%;
+  height: 9.6875em;
+  border: solid #fff 0.2em;
+  background: #47a3da;
+  margin-bottom: 2em; }
+
+form div {
+  width: 30em; }
+  form div input {
+    width: 1em; }
+  > form div:first-child {
+    margin-top: 1em; }
+
+form button {
+  background: #10689a;
+  margin: 0 auto;
+  padding: 1em;
+  border: none;
+  display: block; }
+
+form input:focus {
+  background: #10689a;
+  color: #fff;
+  font-style: none; }
+
+form textarea:focus {
+  background: #10689a;
+  color: #fff;
+  font-style: none; }
+
+input::-webkit-input-placeholder {
+  color: #10689a; }
+
+input::-moz-placeholder {
+  color: #10689a; }
+
+input:-moz-placeholder {
+  /* Older versions of Firefox */
+  color: #10689a; }
+
+input:-ms-input-placeholder {
+  color: #10689a; }
