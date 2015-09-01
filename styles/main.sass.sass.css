@@ -358,7 +358,8 @@ th {
 body {
   padding: 2em;
   background: #47a3da;
-  color: #fff; }
+  color: #fff;
+  font-weight: 300; }
 
 form input {
   color: #10689a;
@@ -381,7 +382,8 @@ form textarea {
   height: 9.6875em;
   border: solid #fff 0.2em;
   background: #47a3da;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  padding: .5em; }
 
 form div {
   width: 30em; }
@@ -400,12 +402,11 @@ form button {
 form input:focus {
   background: #10689a;
   color: #fff;
-  font-style: none; }
+  font-style: normal; }
 
 form textarea:focus {
   background: #10689a;
-  color: #fff;
-  font-style: none; }
+  color: #fff; }
 
 input::-webkit-input-placeholder {
   color: #10689a; }
@@ -419,3 +420,14 @@ input:-moz-placeholder {
 
 input:-ms-input-placeholder {
   color: #10689a; }
+
+@media screen and (min-width: 53.3em) {
+  section {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    border-right: 2em solid #47a3da; }
+  section:nth-child(3) {
+    width: 100%; }
+  button {
+    clear: left; } }

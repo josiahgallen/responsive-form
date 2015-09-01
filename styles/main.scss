@@ -10,7 +10,9 @@ body {
 	padding: 2em;
 	background: $theme;
 	color: $form-text;
+	font-weight: 300;
 }
+
 form {
 
 	input {
@@ -37,6 +39,7 @@ form {
 		border: $form-border;
 		background: $theme;
 		margin-bottom: 2em;
+		padding: .5em;
 	}
 
 	div {
@@ -60,16 +63,16 @@ form {
 	input:focus {
 		background: $example-text;
 		color: $form-text;
-		font-style: none;
+		font-style: normal;
 	}
 
 	textarea:focus {
 		background: $example-text;
 		color: $form-text;
-		font-style: none;
+		
 	}
 }
-
+///////changes color of placeholder text//////
 	input::-webkit-input-placeholder {
 		color: $example-text;
 }
@@ -82,7 +85,32 @@ form {
 	input:-ms-input-placeholder { 
 		color: $example-text;
 }
+///////////////////////////////////////////////
 
-@media screen and(min-width: 47.9375em) {
+@media screen and(min-width: 53.3em) {
 
+	section {
+		float: left;
+		width: 50%;
+		box-sizing: border-box;
+		border-right: 2em solid $theme;
+	}
+
+	section:nth-child(3) {
+			width:100%
+		}
+
+	button{
+		clear: left;
+	}
 }
+
+// @media screen and(min-width: 77.85em) {
+// 	section {
+// 		width: 33%
+// 	}
+
+// 	section:nth-child(3) {
+// 			width:33%
+// 		}
+// }
